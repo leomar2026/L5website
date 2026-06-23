@@ -1,0 +1,42 @@
+# Dependencies
+node_modules/
+
+# Production and framework build outputs
+.next/
+dist/
+build/
+out/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+.env.local
+.env.production
+
+# Test and coverage output
+coverage/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Temporary uploads and local scratch files
+uploads/
+uploaded/
+tmp/
+temp/
+*.tmp
+
+# Tooling caches
+.vite/
+.cache/
+.turbo/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
