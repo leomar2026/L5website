@@ -32,6 +32,7 @@ temp/
 *.tmp
 *.zip
 L5-Innovative-IT-Solutions-website/
+L5-upload-files/
 
 # Tooling caches
 .vite/
