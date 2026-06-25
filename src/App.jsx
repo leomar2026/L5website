@@ -14,8 +14,8 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 gsap.registerPlugin(ScrollTrigger)
 
 const company = 'L5 Innovative IT Solutions'
-const logo = '/assets/l5-logo.png'
-const banner = '/assets/l5-banner.png'
+const logo = './assets/l5-logo.png'
+const banner = './assets/l5-banner.png'
 
 const navItems = [
   ['Home', 'top'],
@@ -194,11 +194,11 @@ const projects3DConfig = {
 const contact3DConfig = {
   images: {
     hero: {
-      src: '/assets/contact-hero.svg',
+      src: './assets/contact-hero.svg',
       alt: 'Futuristic IT support communication background with contact and network icons',
     },
     side: {
-      src: '/assets/contact-support.svg',
+      src: './assets/contact-support.svg',
       alt: 'IT support workspace with laptop, headset, helpdesk dashboard and secure support indicators',
     },
   },
