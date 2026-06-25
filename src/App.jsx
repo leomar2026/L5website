@@ -3,7 +3,6 @@ import { Float, Sparkles } from '@react-three/drei'
 import { motion, useReducedMotion } from 'framer-motion'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import Lenis from '@studio-freight/lenis'
 import {
   ArrowRight, Bot, CheckCircle2, ChevronDown, Cloud, Code2, Cpu,
   Clock, HardDrive, Headphones, Mail, MapPin, Menu, MessageCircle,
@@ -1282,20 +1281,6 @@ function CursorGlow() {
 
 export default function App() {
   const [loading, setLoading] = useState(true)
-  const reduce = useReducedMotion()
-
-  useEffect(() => {
-    if (reduce) return
-    const lenis = new Lenis({ duration: 1.05, smoothWheel: true })
-    lenis.on('scroll', ScrollTrigger.update)
-    const tick = (time) => lenis.raf(time * 1000)
-    gsap.ticker.add(tick)
-    gsap.ticker.lagSmoothing(0)
-    return () => {
-      gsap.ticker.remove(tick)
-      lenis.destroy()
-    }
-  }, [reduce])
 
   return (
     <>
