@@ -404,10 +404,6 @@ function InfrastructureCore({ progress = 0 }) {
         <torusKnotGeometry args={[1.05, .18, 130, 16]} />
         <meshStandardMaterial color="#08152a" emissive="#087cff" emissiveIntensity={1.1} roughness={.18} metalness={.8} wireframe />
       </mesh>
-      <mesh>
-        <boxGeometry args={[1.05, 1.05, 1.05]} />
-        <meshPhysicalMaterial color="#07101e" emissive="#04c8ff" emissiveIntensity={.55} roughness={.18} metalness={.75} transparent opacity={.72} />
-      </mesh>
       {nodes.map((p, i) => (
         <Float key={i} speed={1 + (i % 4) * .2} floatIntensity={.18}>
           <mesh position={p}>
