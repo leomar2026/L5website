@@ -1281,6 +1281,7 @@ function CursorGlow() {
 
 export default function App() {
   const [loading, setLoading] = useState(true)
+  const reduce = useReducedMotion()
 
   return (
     <>
